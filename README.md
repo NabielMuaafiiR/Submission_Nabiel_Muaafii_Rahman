@@ -1,7 +1,7 @@
 # Air Quality - Dashboard Analytics
 ## Dapat langsung mengakses lnk pada url.text
 ```
-[https://submisii-task-rasyid.streamlit.app/](https://submission-task-nabielmuaafiirahman.streamlit.app/)
+https://submission-task-nabielmuaafiirahman.streamlit.app/
 ```
 ## Panduan Penggunaan Streamlit di Local - Shell/Terminal
 ```
