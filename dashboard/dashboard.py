@@ -6,18 +6,18 @@ import seaborn as sns
 # Load dataset
 @st.cache_data
 def load_data():
-    Aotizhongxin_df = pd.read_csv('C:\Tugas\IPB\DBS\Submissions_Nabiel_Muaafii_Rahman\dataset\PRSA_Data_20130301-20170228\PRSA_Data_Aotizhongxin_20130301-20170228.csv', index_col='No')
-    Changping_df = pd.read_csv('C:\Tugas\IPB\DBS\Submissions_Nabiel_Muaafii_Rahman\dataset\PRSA_Data_20130301-20170228\PRSA_Data_Changping_20130301-20170228.csv', index_col='No')
-    Dingling_df = pd.read_csv('C:\Tugas\IPB\DBS\Submissions_Nabiel_Muaafii_Rahman\dataset\PRSA_Data_20130301-20170228\PRSA_Data_Dingling_20130301-20170228.csv', index_col='No')
-    Dongsi_df = pd.read_csv('C:\Tugas\IPB\DBS\Submissions_Nabiel_Muaafii_Rahman\dataset\PRSA_Data_20130301-20170228\PRSA_Data_Dongsi_20130301-20170228.csv', index_col='No')
-    Guanyuan_df = pd.read_csv('C:\Tugas\IPB\DBS\Submissions_Nabiel_Muaafii_Rahman\dataset\PRSA_Data_20130301-20170228\PRSA_Data_Guanyuan_20130301-20170228.csv', index_col='No')
-    Gucheng_df = pd.read_csv('C:\Tugas\IPB\DBS\Submissions_Nabiel_Muaafii_Rahman\dataset\PRSA_Data_20130301-20170228\PRSA_Data_Gucheng_20130301-20170228.csv', index_col='No')
-    Huairou_df = pd.read_csv('C:\Tugas\IPB\DBS\Submissions_Nabiel_Muaafii_Rahman\dataset\PRSA_Data_20130301-20170228\PRSA_Data_Huairou_20130301-20170228.csv', index_col='No')
-    Nongzhanguan_df = pd.read_csv('C:\Tugas\IPB\DBS\Submissions_Nabiel_Muaafii_Rahman\dataset\PRSA_Data_20130301-20170228\PRSA_Data_Nongzhanguan_20130301-20170228.csv', index_col='No')
-    Shunyi_df = pd.read_csv('C:\Tugas\IPB\DBS\Submissions_Nabiel_Muaafii_Rahman\dataset\PRSA_Data_20130301-20170228\PRSA_Data_Shunyi_20130301-20170228.csv', index_col='No')
-    Tiantan_df = pd.read_csv('C:\Tugas\IPB\DBS\Submissions_Nabiel_Muaafii_Rahman\dataset\PRSA_Data_20130301-20170228\PRSA_Data_Tiantan_20130301-20170228.csv', index_col='No')
-    Wanliu_df = pd.read_csv('C:\Tugas\IPB\DBS\Submissions_Nabiel_Muaafii_Rahman\dataset\PRSA_Data_20130301-20170228\PRSA_Data_Wanliu_20130301-20170228.csv', index_col='No')
-    Wanshouxigong_df = pd.read_csv('C:\Tugas\IPB\DBS\Submissions_Nabiel_Muaafii_Rahman\dataset\PRSA_Data_20130301-20170228\PRSA_Data_Wanshouxigong_20130301-20170228.csv', index_col='No')
+    Aotizhongxin_df = pd.read_csv('dataset/PRSA_Data_20130301-20170228/PRSA_Data_Aotizhongxin_20130301-20170228.csv', index_col='No')
+    Changping_df = pd.read_csv('dataset/PRSA_Data_20130301-20170228/PRSA_Data_Changping_20130301-20170228.csv', index_col='No')
+    Dingling_df = pd.read_csv('dataset/PRSA_Data_20130301-20170228/PRSA_Data_Dingling_20130301-20170228.csv', index_col='No')
+    Dongsi_df = pd.read_csv('dataset/PRSA_Data_20130301-20170228/PRSA_Data_Dongsi_20130301-20170228.csv', index_col='No')
+    Guanyuan_df = pd.read_csv('dataset/PRSA_Data_20130301-20170228/PRSA_Data_Guanyuan_20130301-20170228.csv', index_col='No')
+    Gucheng_df = pd.read_csv('dataset/PRSA_Data_20130301-20170228/PRSA_Data_Gucheng_20130301-20170228.csv', index_col='No')
+    Huairou_df = pd.read_csv('dataset/PRSA_Data_20130301-20170228/PRSA_Data_Huairou_20130301-20170228.csv', index_col='No')
+    Nongzhanguan_df = pd.read_csv('dataset/PRSA_Data_20130301-20170228/PRSA_Data_Nongzhanguan_20130301-20170228.csv', index_col='No')
+    Shunyi_df = pd.read_csv('dataset/PRSA_Data_20130301-20170228/PRSA_Data_Shunyi_20130301-20170228.csv', index_col='No')
+    Tiantan_df = pd.read_csv('dataset/PRSA_Data_20130301-20170228/PRSA_Data_Tiantan_20130301-20170228.csv', index_col='No')
+    Wanliu_df = pd.read_csv('dataset/PRSA_Data_20130301-20170228/PRSA_Data_Wanliu_20130301-20170228.csv', index_col='No')
+    Wanshouxigong_df = pd.read_csv('dataset/PRSA_Data_20130301-20170228/PRSA_Data_Wanshouxigong_20130301-20170228.csv', index_col='No')
 
     df = pd.concat([Aotizhongxin_df, Changping_df, Dingling_df, Dongsi_df, Guanyuan_df, Gucheng_df, Huairou_df, Nongzhanguan_df, Shunyi_df, Tiantan_df, Wanliu_df, Wanshouxigong_df], ignore_index=True)
     
